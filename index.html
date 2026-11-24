@@ -1,1 +1,159 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Resumen del día</title></head><body style="font-family:-apple-system,Segoe UI,Arial,sans-serif;background:#f4f6f8;display:flex;min-height:90vh;align-items:center;justify-content:center;text-align:center;color:#0f2a44"><div><h1>📰 Resumen del día</h1><p>La primera edición llega hoy a las 7:00 pm.</p></div></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resumen del día · 24 nov 2026</title>
+<meta property="og:title" content="📰 Resumen del día · 24 nov 2026">
+<meta property="og:description" content="Las noticias más importantes del día: mundo, podcasts, Israel, economía, Panamá, trends y moda.">
+<style>
+  :root { --bg:#f4f6f8; --card:#fff; --ink:#1f2933; --muted:#616e7c; --line:#e4e7eb; --navy:#0f2a44; --link:#0b63c9; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:720px; margin:0 auto; padding:16px 14px 40px; }
+  header { background:var(--navy); color:#fff; border-radius:16px; padding:20px 20px 18px; margin-bottom:16px; }
+  header h1 { margin:0; font-size:26px; letter-spacing:.3px; }
+  header .fecha { margin-top:2px; opacity:.85; }
+  header .tip { margin-top:12px; display:inline-block; background:#ffd166; color:var(--navy); font-weight:600; font-size:14px; padding:5px 12px; border-radius:20px; }
+
+  details { background:var(--card); border-radius:14px; margin:0 0 10px; border-left:6px solid var(--c); box-shadow:0 1px 2px rgba(15,42,68,.06); overflow:hidden; }
+  summary { list-style:none; cursor:pointer; padding:16px 16px 16px 14px; display:flex; align-items:center; gap:10px; font-weight:700; font-size:18px; color:var(--navy); -webkit-tap-highlight-color:transparent; }
+  summary::-webkit-details-marker { display:none; }
+  summary .emoji { font-size:22px; width:28px; text-align:center; }
+  summary .emoji .flag { width:24px; height:17px; vertical-align:-2px; border-radius:2px; }
+  summary .count { margin-left:auto; font-size:13px; font-weight:600; color:var(--muted); background:var(--bg); padding:2px 9px; border-radius:12px; }
+  summary .arrow { width:22px; height:22px; flex:none; transition:transform .2s ease; color:var(--muted); }
+  details[open] summary .arrow { transform:rotate(90deg); }
+  details[open] summary { border-bottom:1px solid var(--line); }
+
+  ol { margin:0; padding:6px 16px 8px 16px; list-style:none; counter-reset:n; }
+  ol > li { counter-increment:n; position:relative; padding:14px 0 14px 38px; border-bottom:1px solid var(--line); }
+  ol > li:last-child { border-bottom:none; }
+  ol > li::before { content:counter(n); position:absolute; left:0; top:14px; width:26px; height:26px; border-radius:50%; background:var(--c); color:#fff; font-size:14px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+  .t { font-weight:700; font-size:16.5px; line-height:1.35; margin:0 0 4px; }
+  .e { margin:0; color:#3e4c59; font-size:15.5px; }
+  .src { display:inline-block; margin-top:6px; font-size:14px; font-weight:600; color:var(--link); text-decoration:none; }
+  .sub { padding:12px 16px 0; margin:0; font-size:14px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.4px; }
+  .listen { padding:4px 16px 16px; font-size:14px; color:var(--muted); }
+  .listen a { color:var(--link); font-weight:600; text-decoration:none; }
+
+  footer { text-align:center; color:var(--muted); font-size:14px; margin-top:22px; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0e1621; --card:#17212b; --ink:#e4e7eb; --muted:#9aa5b1; --line:#243241; --navy:#cfe3ff; --link:#6ab3ff; }
+    header { background:#17304d; color:#fff; } header h1 { color:#fff; }
+    .e { color:#c3cbd4; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>📰 Resumen del día</h1>
+  <div class="fecha">Martes 24 de noviembre de 2026</div>
+  <div class="tip">👇 Toca una sección para ver las noticias</div>
+</header>
+
+<!-- Flecha reutilizable en cada <summary>:
+<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+-->
+
+<!-- ===== Estructura de una noticia (repetir dentro de cada <ol>) =====
+<li>
+  <p class="t">Título de la noticia</p>
+  <p class="e">Explicación breve: qué pasó, por qué importa y qué sigue (2-3 frases).</p>
+  <a class="src" href="URL" target="_blank" rel="noopener">Leer más ↗</a>
+</li>
+-->
+
+<details style="--c:#2f80ed">
+  <summary><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg><span class="emoji">🌎</span>Noticias del mundo<span class="count">8</span></summary>
+  <ol>
+    <li><p class="t">Rusia acusa a Estonia de estar al borde de provocar una guerra abierta</p><p class="e">La cancillería rusa reaccionó con dureza al anuncio de Estonia de cerrar su frontera terrestre con Rusia. Moscú acusa a Tallin de permitir ataques ucranianos desde su territorio; Estonia es miembro de la OTAN desde 2004, lo que eleva la tensión con la alianza.</p><a class="src" href="https://www.democracynow.org/2026/11/24/headlines/russia_threatens_open_war_with_estonia_a_former_soviet_republic_turned_nato_member" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Zelensky dice que drones ucranianos alcanzaron un buque de guerra ruso en Libia</p><p class="e">Ucrania lleva la guerra naval lejos del mar Negro, con ataques a barcos rusos en Libia y el Báltico. El Kremlin advirtió de “consecuencias dolorosas” y en la ONU acusó a Kiev de atacar más de 200 buques comerciales desde julio.</p><a class="src" href="https://www.bbc.com/news/articles/cr894gjz0j0yo" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Ataque ruso en Zaporizhzhia deja 2 muertos y unos 40 heridos</p><p class="e">Una bomba guiada impactó un edificio de apartamentos durante un ataque nocturno con drones y misiles; entre los heridos hay cuatro niños. Zelensky advirtió que la inteligencia ucraniana detecta preparativos para nuevos ataques y pidió más misiles antiaéreos a sus aliados.</p><a class="src" href="https://www.reuters.com/world/russian-attack-kills-2-people-wounds-22-ukraines-zaporizhzhia-official-says-2026-11-24/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">La UE presenta su paquete 22 de sanciones contra Rusia</p><p class="e">El nuevo paquete apunta a bancos, plataformas de criptomonedas y a la participación rusa en eventos deportivos y culturales europeos. Llega mientras Rusia descarta revivir el acuerdo de granos y aumenta la presión sobre el flanco este de Europa.</p><a class="src" href="https://aa.com.tr/en/world/morning-briefing-nov-24-2026/4135240" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">México juzgará al “Chapo Isidro” y niega su extradición a EE.UU.</p><p class="e">El ejército capturó en Sinaloa a Fausto Isidro Meza Flores, líder del cártel Beltrán Leyva y uno de los 10 más buscados del FBI. Su arresto provocó enfrentamientos y bloqueos con vehículos incendiados; Washington pedía su entrega.</p><a class="src" href="https://www.democracynow.org/2026/11/24/headlines/mexico_to_try_alleged_drug_kingpin_el_chapo_isidro_after_denying_us_extradition_request" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Drones de las RSF atacan Jartum y su red eléctrica colapsa</p><p class="e">El ejército sudanés dijo haber interceptado drones de las Fuerzas de Apoyo Rápido tras ataques al aeropuerto principal y a varios edificios, incluida una instalación de la ONU. Al menos cuatro personas murieron y los ataques a centrales dejan la red eléctrica al borde del colapso.</p><a class="src" href="https://www.democracynow.org/2026/11/24/headlines/rapid_support_forces_launch_drone_attack_on_sudans_capital_as_electrical_grid_nears_collapse" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Incendio en una fábrica de Indonesia deja 24 muertos y decenas de desaparecidos</p><p class="e">Las autoridades indonesias confirmaron las víctimas mientras los rescatistas siguen buscando a decenas de personas atrapadas o desaparecidas. Es uno de los peores accidentes industriales del año en el país.</p><a class="src" href="https://www.reuters.com/world/asia-pacific/indonesia-says-24-killed-factory-blaze-rescuers-search-dozens-missing-2026-11-23/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Tormenta amenaza el viaje de Thanksgiving en la costa este de EE.UU.</p><p class="e">Se esperan lluvias fuertes, vientos y inundaciones costeras el miércoles y el jueves de Thanksgiving. Nueva York y Filadelfia están bajo vigilancia por ráfagas de hasta 60 mph, justo cuando millones de personas viajan por el feriado.</p><a class="src" href="https://abcnews.com/US/powerful-storm-threatens-east-coast-thanksgiving-approaches-forecast/story?id=138406163" target="_blank" rel="noopener">Leer más ↗</a></li>
+  </ol>
+</details>
+
+<details style="--c:#9b51e0">
+  <summary><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg><span class="emoji">🎙️</span>Resumen de podcasts<span class="count">5</span></summary>
+  <ol>
+    <li><p class="t">Pies de Thanksgiving de hasta $150</p><p class="e">Algunos pies premium para el feriado llegan a costar hasta $150, mientras los supermercados ofrecen cenas de Thanksgiving con descuento, incluso vendiéndolas a pérdida, para atraer clientes.</p><a class="src" href="https://www.mbdailyshow.com/trump-pressure-brings-jensen-huang-back-thanksgiving-pies-cost-up-to-150/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">El ejército de EE.UU. podrá detonar municiones en Iowa</p><p class="e">Los tribunales levantaron la suspensión y el Army planea destruir el miércoles municiones con plomo; grupos ambientalistas advierten que la columna de contaminación podría llegar a 100 millas.</p><a class="src" href="https://www.democracynow.org/2026/11/24/headlines/alarm_grows_over_us_army_plan_to_explode_lead_containing_munitions_on_wednesday" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Nueva York y Citi Bike acuerdan bajar precios</p><p class="e">La ciudad cerró un trato con el sistema de bicicletas compartidas para limitar las tarifas a $3.65 por viaje, tras quejas por los aumentos.</p></li>
+    <li><p class="t">Blue Lagoon de Islandia sale a bolsa</p><p class="e">La famosa laguna geotermal hizo su IPO en Nasdaq Iceland a 95 coronas por acción. Usará los fondos para expandirse en turismo de aventura, aunque opera cerca de zonas volcánicas activas.</p><a class="src" href="https://www.ipox.com/ipo-calendar/blue-lagoon" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Snoopy, un negocio de $1,000 millones</p><p class="e">Sony controla 80% de Peanuts, valuado en más de $1,000 millones. La franquicia de Snoopy y Charlie Brown sigue siendo una de las marcas de entretenimiento más rentables del mundo.</p><a class="src" href="https://www.avclub.com/sony-buys-peanuts" target="_blank" rel="noopener">Leer más ↗</a></li>
+  </ol>
+  <div class="listen">🎧 Escuchar: <a href="https://www.mbdailyshow.com/trump-pressure-brings-jensen-huang-back-thanksgiving-pies-cost-up-to-150/">Morning Brew Daily</a> · <a href="https://tboypod.com/episodes">The Best One Yet</a></div>
+</details>
+
+<details style="--c:#0038b8">
+  <summary><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg><span class="emoji"><svg class="flag" viewBox="0 0 22 16"><rect width="22" height="16" fill="#fff" stroke="#d0d5da" stroke-width=".5"/><rect y="1.6" width="22" height="2.2" fill="#0038b8"/><rect y="12.2" width="22" height="2.2" fill="#0038b8"/><polygon points="11,4.6 13.9,9.6 8.1,9.6" fill="none" stroke="#0038b8" stroke-width=".8"/><polygon points="11,11.4 13.9,6.4 8.1,6.4" fill="none" stroke="#0038b8" stroke-width=".8"/></svg></span>Israel / Medio Oriente<span class="count">6</span></summary>
+  <ol>
+    <li><p class="t">El bloque de Eisenkot evalúa un gobierno en minoría para reemplazar a Netanyahu</p><p class="e">Según Canal 12, el bloque considera un gobierno corto de cinco o seis ministros que, si otros partidos no se suman, disolvería la Knesset y llamaría a nuevas elecciones. Las conversaciones de unidad con el Likud siguen trabadas por quién lo lideraría y la reforma judicial.</p><a class="src" href="https://www.timesofisrael.com/liveblog_entry/eisenkot-bloc-said-to-weigh-short-lived-minority-government-before-repeat-election/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Israel mata al jefe de seguridad interna de Hamás en Ciudad de Gaza</p><p class="e">El ejército y el Shin Bet confirmaron la muerte de Naim Abu Nahal en un ataque aéreo, semanas después de capturar a su predecesor. Es otro golpe a la estructura de Hamás pese a la tregua y al plan de paz estancado.</p><a class="src" href="https://www.timesofisrael.com/israel-kills-hamas-security-chief-in-gaza-city-weeks-after-capturing-predecessor/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Irán no negociará con EE.UU. hasta que se cumplan sus siete condiciones</p><p class="e">El jefe negociador y presidente del Parlamento, Mohammad Bagher Ghalibaf, pidió alivio de sanciones, fin del bloqueo naval y liberación de activos. Teherán además amenazó con “ampliar el alcance geográfico” del conflicto; Trump dijo que podría retomar ataques tras Año Nuevo.</p><a class="src" href="https://www.timesofisrael.com/liveblog_entry/iran-threatens-to-shift-the-geographical-scope-of-current-conflict/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Irán dice que minas incendiaron tres petroleros en el estrecho de Ormuz</p><p class="e">La Marina de la Guardia Revolucionaria afirmó que los buques chocaron con minas por usar “rutas no autorizadas” y que la cobertura aérea de EE.UU. no lo evitó. La afirmación no fue verificada de forma independiente, pero mantiene el riesgo en la principal ruta petrolera del mundo.</p><a class="src" href="https://www.aa.com.tr/en/middle-east/iran-s-revolutionary-guard-corps-navy-says-mine-blasts-set-3-oil-tankers-ablaze-in-strait-of-hormuz/4135182" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Kushner advierte que Israel va camino a ser un “paria global”</p><p class="e">El enviado de EE.UU. dijo que Israel está ante una “bifurcación” mientras el plan para Gaza se estanca y la Junta de Paz no ha puesto a prueba el compromiso de desarme de Hamás. Es una de las críticas más duras desde Washington.</p><a class="src" href="https://www.timesofisrael.com/kushner-israel-facing-fork-in-the-road-as-it-trends-toward-global-pariah-status/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Ataque hutí hiere a 11 personas en el distrito financiero de Riad</p><p class="e">Defensa civil saudí informó que el ataque alcanzó una torre en la capital. A la vez, fuerzas yemeníes dicen que los hutíes están a unos 60 km de Adén, en plena escalada desde que colapsó el alto el fuego en Yemen en julio.</p><a class="src" href="https://www.timesofisrael.com/liveblog_entry/saudi-civil-defense-says-11-injured-in-houthi-attack-on-riyadh-financial-district/" target="_blank" rel="noopener">Leer más ↗</a></li>
+  </ol>
+</details>
+
+<details style="--c:#27ae60">
+  <summary><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg><span class="emoji">💰</span>Economía<span class="count">7</span></summary>
+  <ol>
+    <li><p class="t">Wall Street cae y devuelve parte del rally impulsado por Nvidia</p><p class="e">Tras su mejor día desde abril de 2025 (S&amp;P 500 +4.7% y Nasdaq +6.5% el lunes), a media mañana del martes el Dow bajaba 0.4%, el S&amp;P 500 1.2% y el Nasdaq 1.8%. Los chips lideraron las pérdidas y Nvidia cedía cerca de 5%.</p><a class="src" href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Trump dice que “convenció” a la junta de Nvidia de restituir a Jensen Huang</p><p class="e">Huang renunció a inicios de noviembre por reportes de un romance con una empresaria acusada de espiar para China. Funcionarios aseguraron a la junta que no enfrenta cargos ni es riesgo de seguridad; críticos hablan de un colapso del gobierno corporativo. Testificará ante el Congreso el 3 de diciembre.</p><a class="src" href="https://abcnews.com/US/trump-administration-assured-nvidia-huang-facing-criminal-charges/story?id=138405808" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">El mercado ya descuenta casi seguro un alza de tasas de la Fed</p><p class="e">Los traders asignan 95% de probabilidad a una subida de 0.25 puntos y 5% a una de 0.50. Analistas critican el silencio del presidente de la Fed, Kevin Warsh, y el dólar está en su nivel más fuerte desde marzo de 2025.</p><a class="src" href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">El petróleo toca su nivel más bajo desde agosto</p><p class="e">El Brent bajó a unos $89 por barril y el WTI a cerca de $80, presionados por más oferta y temor a un excedente (Deutsche Bank estima 1.7 millones de barriles diarios). El riesgo en Ormuz evita caídas mayores.</p><a class="src" href="https://abc.net.au/news/2026-11-24/asx-markets-business-news-live-updates-nov-24-2026/107419524" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Best Buy, Dick's y Dollar Tree suben con buenos resultados antes de Black Friday</p><p class="e">Best Buy tuvo su mejor alza en ventas comparables en cinco años (+6.1%) y elevó su guía. Dick's subió casi 15% en su primer trimestre completo con Foot Locker, y Dollar Tree más de 11% tras mejorar su pronóstico anual.</p><a class="src" href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">HPE y Dell se desploman por dudas sobre el negocio de AI</p><p class="e">HP Enterprise caía alrededor de 13% al anticipar que el margen de su división de nube y AI bajará a cerca de 14% en 2027 desde 18.4%. Dell, que reporta tras el cierre, también retrocedía por la salida del trade de AI.</p><a class="src" href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Las acciones de Anthropic cotizan por debajo de su precio de IPO</p><p class="e">Los títulos de la empresa de AI operaban por debajo de los $83 de su salida a bolsa en la preapertura. Es una señal del ánimo más cauteloso de los inversionistas con las tecnológicas ligadas a la inteligencia artificial.</p><a class="src" href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+  </ol>
+</details>
+
+<details style="--c:#da121a">
+  <summary><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg><span class="emoji"><svg class="flag" viewBox="0 0 22 16"><rect width="22" height="16" fill="#fff" stroke="#d0d5da" stroke-width=".5"/><rect x="11" width="11" height="8" fill="#da121a"/><rect y="8" width="11" height="8" fill="#072357"/><polygon points="5.5,1.8 6.2,3.4 7.9,3.5 6.6,4.6 7,6.2 5.5,5.3 4,6.2 4.4,4.6 3.1,3.5 4.8,3.4" fill="#072357"/><polygon points="16.5,9.8 17.2,11.4 18.9,11.5 17.6,12.6 18,14.2 16.5,13.3 15,14.2 15.4,12.6 14.1,11.5 15.8,11.4" fill="#da121a"/></svg></span>Panamá<span class="count">5</span></summary>
+  <ol>
+    <li><p class="t">Minera Panamá acepta las condiciones del Gobierno</p><p class="e">La Comisión Interministerial informó que la empresa aceptó las cinco condiciones planteadas en la primera reunión. Aclaró que esto no implica aún una decisión sobre el futuro de la mina, pues primero se escuchará a la población.</p><a class="src" href="https://www.tvn-2.com/nacionales/mina-donoso-comision-interministerial-minera-panama_1_2272290.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">CSS impone multas por B/.12.8 millones por fallas en entrega de medicamentos</p><p class="e">Ocho empresas incumplieron los plazos para entregar 16.8 millones de unidades de medicamentos. La CSS explicó el desabastecimiento y prevé recuperar la disponibilidad durante diciembre.</p><a class="src" href="https://www.prensa.com/economia/css-impone-multas-por-128-millones-por-incumplimientos-en-la-entrega-de-medicamentos/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Panamá presenta reclamo diplomático a China por inspecciones a buques</p><p class="e">El canciller Javier Martínez-Acha confirmó la queja por las detenciones e inspecciones a barcos con bandera panameña, que dice ya comenzaron a disminuir. Aliados internacionales también expresaron inconformidad con estas medidas.</p><a class="src" href="https://www.laestrella.com.pa/panama/nacional/martinez-acha-confirma-reclamacion-diplomatica-a-china-por-inspecciones-a-buques-panamenos-NH27578234" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Reconstrucción de casas por el terremoto terminaría en marzo de 2027</p><p class="e">El Ministerio de Vivienda estima entre 4,500 y 5,000 casas con daño total tras el terremoto del 9 de octubre. El plan usará modelos prefabricados certificados y prohíbe reconstruir sobre fallas geológicas.</p><a class="src" href="https://www.tvn-2.com/nacionales/ministerio-vivienda-proyecta-marzo-2027-reconstruccion-de-viviendas_1_2272296.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Chapman explica la mejora de Moody's a la calificación de Panamá</p><p class="e">El ministro de Economía detalló la mejora de Moody's Ratings en la calificación de riesgo del país y su estrategia para reducir el déficit fiscal y atraer inversiones. Una mejor nota puede abaratar el financiamiento del Estado.</p><a class="src" href="https://www.telemetro.com/entrevistas/nacionales/ministro-chapman-explica-mejora-moodys-ratings-la-calificacion-riesgo-panama-n6099458" target="_blank" rel="noopener">Leer más ↗</a></li>
+  </ol>
+</details>
+
+<details style="--c:#f2994a">
+  <summary><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg><span class="emoji">🔥</span>Trends<span class="count">8</span></summary>
+  <ol>
+    <li><p class="t">Miley Cyrus se casa con Maxx Morando</p><p class="e">La cantante se casó con el baterista en una ceremonia íntima en Palm Springs, California. Su vestido de Saint Laurent se volvió de lo más comentado en redes.</p><a class="src" href="https://www.yahoo.com/entertainment/celebrity/fashion/articles/miley-cyrus-walks-down-aisle-153316621.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Marvel lanza el tráiler final de “Avengers: Doomsday”</p><p class="e">El último avance de la próxima gran película de los Avengers acapara la conversación de fans. Es una de las películas más esperadas de Marvel.</p><a class="src" href="https://abcnews.com/video/138388416/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Gran final de “Dancing with the Stars” esta noche</p><p class="e">La temporada cierra en vivo con fiestas para verla organizadas en varias ciudades. El programa de ABC define hoy a su campeón.</p><a class="src" href="https://abcnews.com/video/138405884/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Arrestan a dos por intrusión en la casa de campo de William y Kate</p><p class="e">La policía de Norfolk detuvo a dos personas por sospecha de robo e intrusión en una propiedad de Sandringham que medios identifican como Anmer Hall. La casa estaba desocupada y la investigación sigue.</p><a class="src" href="https://abcnews.com/GMA/News/arrested-suspicion-burglary-prince-william-kates-country-home/story?id=138408480" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Equipo de Harry y Meghan niega reportes sobre su visa</p><p class="e">Su equipo calificó de “totalmente falsas” las afirmaciones sobre su situación migratoria, en medio de especulación de que Trump los habría obligado a regresar a Reino Unido.</p><a class="src" href="https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-harry-meghan-markle-team-153000854.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">El desfile de Macy's rendirá homenaje a Fiona, la hipopótamo</p><p class="e">La famosa hipopótamo del zoológico de Cincinnati, ícono viral en internet, tendrá un homenaje en el tradicional desfile de Thanksgiving en Nueva York.</p><a class="src" href="https://abcnews.com/video/138388654/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Kid Cudi presume su colección de Nike CC1 de Caitlin Clark</p><p class="e">El rapero mostró varios pares de las zapatillas firma de la estrella de la WNBA, que se han vuelto de las más buscadas del momento.</p><a class="src" href="https://www.yahoo.com/entertainment/celebrity/fashion/articles/cc-don-t-forget-kid-154829908.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Revelan la causa de muerte de Sheila Mangubat, de “90 Day Fiancé”</p><p class="e">Una amiga cercana compartió qué causó la muerte de la exparticipante del reality a los 35 años, lo que generó una ola de mensajes de fans.</p><a class="src" href="https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/90-day-fianc-alum-sheila-152250708.html" target="_blank" rel="noopener">Leer más ↗</a></li>
+  </ol>
+</details>
+
+<details style="--c:#e0569b">
+  <summary><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg><span class="emoji">👗</span>Mundo de la moda<span class="count">6</span></summary>
+  <ol>
+    <li><p class="t">Woolrich abre flagship en Milán y prepara desfile en Milan Fashion Week</p><p class="e">La marca estadounidense de outdoor, ahora de BasicNet, estrena tienda insignia en Milán y desfilará en la semana de la moda masculina de enero, como parte de su relanzamiento.</p><a class="src" href="https://wwd.com/fashion-news/fashion-features/woolrich-milan-flagship-january-runway-show-basicnet-1239462254/" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Brioni y el Como 1907 extienden su alianza</p><p class="e">La casa de sastrería romana sigue vistiendo al club italiano la próxima temporada, uniendo la sastrería de lujo con la cultura futbolera del lago de Como.</p><a class="src" href="https://hypebeast.com/2026/11/brioni-como-1907-partnership-info" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">A Ma Maniere abre una flagship de cuatro pisos en Chicago</p><p class="e">La boutique de streetwear inauguró en Fulton Market un espacio con tienda, lounge y dos suites para pasar la noche, apostando por la experiencia en retail.</p><a class="src" href="https://hypebeast.com/2026/11/a-ma-maniere-officially-opens-new-chicago-flagship" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Jeff Staple cierra su tienda 21 Mercer en Nueva York</p><p class="e">El diseñador anunció el cierre del espacio cultural y de retail en SoHo tras 20 meses abierto, otra señal de lo difícil que es sostener tiendas conceptuales.</p><a class="src" href="https://hypebeast.com/2026/11/jeff-staple-closes-21-mercer-new-york-city-announcement" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">Action Bronson luce un anillo de campeonato de los Knicks hecho a medida</p><p class="e">La pieza única de Saint Jewels tiene 45.88 quilates de diamantes y 53 zafiros azules y naranjas, en los colores del equipo de Nueva York.</p><a class="src" href="https://hypebeast.com/2026/11/action-bronson-bespoke-saint-jewels-new-york-knicks-championship-ring-closer-look" target="_blank" rel="noopener">Leer más ↗</a></li>
+    <li><p class="t">SR_A presenta su colección GRIND</p><p class="e">La marca explora ropa funcional con estética retro, usando teñido índigo hecho a mano en su nueva propuesta editorial.</p><a class="src" href="https://hypebeast.com/2026/11/sra-grind-editorial-collection-release" target="_blank" rel="noopener">Leer más ↗</a></li>
+  </ol>
+</details>
+
+<footer>Actualizado Martes 24 de noviembre de 2026 · 7:00 pm<br>✨ ¡Feliz noche!</footer>
+</div>
+</body>
+</html>
